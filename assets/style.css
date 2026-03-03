@@ -1,0 +1,180 @@
+:root {
+  --bg: #ffffff;
+  --bg-alt: #f5f5f7;
+  --text: #222222;
+  --muted: #666666;
+  --accent: #0055aa;
+  --accent-soft: #e0ecff;
+  --border: #dddddd;
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+}
+
+.site-header {
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border);
+  padding: 2.5rem 0 2rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+h1 {
+  margin: 0 0 0.4rem;
+  font-size: 2.2rem;
+}
+
+.subtitle {
+  margin: 0 0 0.6rem;
+  color: var(--muted);
+}
+
+.links a {
+  color: var(--accent);
+  text-decoration: none;
+  margin-right: 0.4rem;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+}
+
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  padding: 0.6rem 1.2rem;
+}
+
+.navbar a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.navbar a:hover {
+  color: var(--accent);
+}
+
+main {
+  padding: 2rem 0 3rem;
+}
+
+section {
+  margin-bottom: 2.2rem;
+}
+
+h2 {
+  margin-top: 0;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.3rem;
+  font-size: 1.4rem;
+}
+
+h3 {
+  margin-bottom: 0.4rem;
+  margin-top: 1.4rem;
+  font-size: 1.1rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+.pub-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pub-list li {
+  margin-bottom: 1rem;
+  padding: 0.6rem 0.8rem;
+  background: var(--accent-soft);
+  border-radius: 4px;
+}
+
+.pub-title {
+  font-weight: 600;
+}
+
+.pub-authors,
+.pub-venue {
+  font-size: 0.95rem;
+}
+
+.pub-links a {
+  font-size: 0.9rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.pub-links a:hover {
+  text-decoration: underline;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--bg-alt);
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .header-content {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  .profile-pic {
+    width: 190px;
+    height: 190px;
+  }
+}
+
+#about p {
+  text-align: justify;
+}
+
