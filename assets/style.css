@@ -184,8 +184,8 @@ ul {
 }
 
 .single-figure img {
-  width: 100%;
-  max-width: 350px;
+  width: 200%;
+  max-width: 500px;
   border-radius: 6px;
   border: 1px solid var(--border);
 }
@@ -220,6 +220,7 @@ ul {
   font-size: 0.9rem;
   color: var(--muted);
 }
+
 
 
 
