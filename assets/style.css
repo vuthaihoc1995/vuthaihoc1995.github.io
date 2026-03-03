@@ -190,8 +190,8 @@ ul {
 }
 
 .figure-row img {
-  width: 100%;
-  max-width: 250px;
+  width: 200%;
+  max-width: 400px;
   border-radius: 6px;
   border: 1px solid var(--border);
 }
@@ -201,5 +201,6 @@ ul {
   font-size: 0.9rem;
   color: var(--muted);
 }
+
 
 
