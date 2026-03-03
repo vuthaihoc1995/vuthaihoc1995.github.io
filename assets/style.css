@@ -210,7 +210,7 @@ ul {
 
 .figure-row img {
   width: 200%;
-  max-width: 400px;
+  max-width: 800px;
   border-radius: 6px;
   border: 1px solid var(--border);
 }
@@ -220,6 +220,7 @@ ul {
   font-size: 0.9rem;
   color: var(--muted);
 }
+
 
 
 
