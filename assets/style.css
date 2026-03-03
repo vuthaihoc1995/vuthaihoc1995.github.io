@@ -30,7 +30,7 @@ body {
 }
 
 .site-header {
-  background: var(--bg-alt);
+  background: #284a621f;
   border-bottom: 1px solid var(--border);
   padding: 2.5rem 0 2rem;
 }
@@ -177,4 +177,5 @@ ul {
 #about p {
   text-align: justify;
 }
+
 
